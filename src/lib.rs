@@ -39,6 +39,9 @@ impl Display for Displayer {
         write!(f, "\n\nF#:\n")?;
         FSharp::translate(self, f)?;
 
+        write!(f, "\n\nClojure:\n")?;
+        Clojure::translate(self, f)?;
+
         Ok(())
     }
 

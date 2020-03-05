@@ -6,6 +6,7 @@ pub mod ocaml;
 pub mod pascal;
 pub mod groovy;
 pub mod fsharp;
+pub mod clojure;
 
 pub use go::Go;
 pub use lua::Lua;
@@ -15,4 +16,5 @@ pub use ocaml::OCaml;
 pub use pascal::Pascal;
 pub use groovy::Groovy;
 pub use fsharp::FSharp;
+pub use clojure::Clojure;
 
