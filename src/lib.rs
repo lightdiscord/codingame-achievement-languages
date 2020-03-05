@@ -33,6 +33,12 @@ impl Display for Displayer {
         write!(f, "\n\nGroovy:\n")?;
         Groovy::translate(self, f)?;
 
+        write!(f, "\n\nGo:\n")?;
+        Go::translate(self, f)?;
+
+        write!(f, "\n\nF#:\n")?;
+        FSharp::translate(self, f)?;
+
         Ok(())
     }
 
