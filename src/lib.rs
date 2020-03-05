@@ -18,6 +18,9 @@ impl Display for Displayer {
         write!(f, "C:\n")?;
         CLang::translate(self, f)?;
 
+        write!(f, "\n\nVB.NET:\n")?;
+        VBNet::translate(self, f)?;
+
         Ok(())
     }
 

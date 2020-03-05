@@ -6,6 +6,7 @@ use node_everywhere::Displayer;
 fn main() -> Fallible<()> {
     let mut buffer = String::new();
     io::stdin().read_to_string(&mut buffer)?;
+    let buffer = buffer.replace("\"", "'");
 
     let displayer = Displayer {
         node: "/usr/local/lib/nodejs/bin/node".to_string(),
