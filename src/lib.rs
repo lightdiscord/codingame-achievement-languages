@@ -27,6 +27,12 @@ impl Display for Displayer {
         write!(f, "\n\nOCaml:\n")?;
         OCaml::translate(self, f)?;
 
+        write!(f, "\n\nLua:\n")?;
+        Lua::translate(self, f)?;
+
+        write!(f, "\n\nGroovy:\n")?;
+        Groovy::translate(self, f)?;
+
         Ok(())
     }
 
