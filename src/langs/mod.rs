@@ -1,5 +1,6 @@
 pub mod go;
 pub mod lua;
+pub mod bash;
 pub mod clang;
 pub mod vbnet;
 pub mod ocaml;
@@ -10,6 +11,7 @@ pub mod clojure;
 
 pub use go::Go;
 pub use lua::Lua;
+pub use bash::Bash;
 pub use clang::CLang;
 pub use vbnet::VBNet;
 pub use ocaml::OCaml;

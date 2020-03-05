@@ -42,6 +42,9 @@ impl Display for Displayer {
         write!(f, "\n\nClojure:\n")?;
         Clojure::translate(self, f)?;
 
+        write!(f, "\n\nBash:\n")?;
+        Bash::translate(self, f)?;
+
         Ok(())
     }
 
