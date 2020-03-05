@@ -24,6 +24,9 @@ impl Display for Displayer {
         write!(f, "\n\nPascal:\n")?;
         Pascal::translate(self, f)?;
 
+        write!(f, "\n\nOCaml:\n")?;
+        OCaml::translate(self, f)?;
+
         Ok(())
     }
 
