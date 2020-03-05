@@ -21,6 +21,9 @@ impl Display for Displayer {
         write!(f, "\n\nVB.NET:\n")?;
         VBNet::translate(self, f)?;
 
+        write!(f, "\n\nPascal:\n")?;
+        Pascal::translate(self, f)?;
+
         Ok(())
     }
 
