@@ -15,8 +15,26 @@ pub struct Displayer {
 
 impl Display for Displayer {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "C:\n")?;
+        write!(f, "CSharp:\n")?;
+        CSharp::translate(self, f)?;
+
+        write!(f, "\n\nCPP:\n")?;
+        CPP::translate(self, f)?;
+
+        write!(f, "\n\nJava:\n")?;
+        Java::translate(self, f)?;
+
+        write!(f, "\n\nPython3:\n")?;
+        Python3::translate(self, f)?;
+
+        write!(f, "\n\nBash:\n")?;
+        Bash::translate(self, f)?;
+
+        write!(f, "\n\nC:\n")?;
         CLang::translate(self, f)?;
+
+        write!(f, "\n\nClojure:\n")?;
+        Clojure::translate(self, f)?;
 
         write!(f, "\n\nVB.NET:\n")?;
         VBNet::translate(self, f)?;
@@ -38,12 +56,6 @@ impl Display for Displayer {
 
         write!(f, "\n\nF#:\n")?;
         FSharp::translate(self, f)?;
-
-        write!(f, "\n\nClojure:\n")?;
-        Clojure::translate(self, f)?;
-
-        write!(f, "\n\nBash:\n")?;
-        Bash::translate(self, f)?;
 
         Ok(())
     }
