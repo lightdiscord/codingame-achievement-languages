@@ -4,5 +4,5 @@ members = [
     "crates/cli/core",
     "crates/cli/cli",
     "crates/cli/command/transform",
-    "crates/languages"
+    "crates/translator"
 ]

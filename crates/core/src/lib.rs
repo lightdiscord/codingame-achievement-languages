@@ -1,10 +1,3 @@
-pub struct Context {
-    node: String,
-    code: String
-}
+pub const POLYFILL: &'static str = "require('/codemachine/lib/javascript/internal/polyfill.js')";
 
-impl Context {
-    pub fn new(node: String, code: String) -> Self {
-        Context { node, code }
-    }
-}
+pub const NODE: &'static str = "/usr/local/lib/nodejs/bin/node";
