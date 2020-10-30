@@ -1,10 +1,8 @@
-[package]
-name = "node_everywhere"
-version = "0.1.0"
-authors = ["LightDiscord <root@arnaud.sh>"]
-edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-failure = "0.1"
+[workspace]
+members = [
+    "crates/core",
+    "crates/cli/core",
+    "crates/cli/cli",
+    "crates/cli/command/transform",
+    "crates/languages"
+]
